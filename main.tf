@@ -9,11 +9,11 @@ terraform {
 
 # Configure the AWS Provider
 provider "aws" {
-  region = "ap-south-1" # define region as per your account
+  region = "ap-south-1" # Define region as per your account
 }
 
 resource "aws_s3_bucket" "K21_CI_CD_Bucket" {
-  bucket = "demo-github-action-tf-medium"
+  bucket = "k21-demo-github-action-tf"
 
   object_lock_enabled = false
 
